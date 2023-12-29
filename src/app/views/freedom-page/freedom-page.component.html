@@ -1,5 +1,5 @@
 <c-card class="app-community mb-3">
-  <c-card-header>Healing Topics</c-card-header>
+  <c-card-header>Therapist Pages</c-card-header>
   <c-card-body>
     <c-row class="pb-3">
       <!-- <c-col xs="3">
@@ -18,7 +18,7 @@
         <tr class="text-center">
           <th class="text-center">No</th>
           <th>Logo</th>
-          <th>Topic Name</th>
+          <th>Pages Name</th>
           <th>Link</th>
           <th>Description</th>
           <th>DateCreation</th>
@@ -46,9 +46,9 @@
             <td>{{ page.CommunityName }}</td>
             <td class="c-width">
               <a
-                [href]="'https://healing.tube/pages/' + page.slug"
+                [href]="'https://therapist.tube/pages/' + page.slug"
                 target="_blank"
-                >{{ "https://healing.tube/pages/" + page.slug }}</a
+                >{{ "https://therapist.tube/pages/" + page.slug }}</a
               >
             </td>
             <td class="c-width">
@@ -108,7 +108,7 @@
       </tbody>
 
       <h6 *ngIf="!pageList.length" class="text-center p-5 m-0">
-        No Community available
+        No Therapist available
       </h6>
     </app-table>
     <app-pagination

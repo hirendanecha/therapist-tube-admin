@@ -101,9 +101,9 @@ export class CommunityComponent implements OnInit, AfterViewInit {
     const modalRef = this.modalService.open(DeleteDialogComponent, {
       centered: true,
     });
-    modalRef.componentInstance.title = 'Community';
+    modalRef.componentInstance.title = 'Therapist';
     modalRef.componentInstance.message =
-      'Are you sure want to delete this community?';
+      'Are you sure want to delete this therapist?';
     modalRef.result.then((res) => {
       if (res === 'success') {
         this.communityService.deleteCommunity(Id).subscribe({

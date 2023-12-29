@@ -34,7 +34,7 @@ const routes: Routes = [
       //     import('./views/community-post/community-post.module').then((m) => m.CommunityPostModule),
       // },
       {
-        path: 'community',
+        path: 'therapist',
         loadChildren: () =>
           import('./views/community/community.module').then(
             (m) => m.CommunityModule
