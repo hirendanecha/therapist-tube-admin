@@ -8,14 +8,14 @@ const routes: Routes = [
     path: '',
     component: CommunityPostComponent,
     data: {
-      title: 'Community Post Page',
+      title: 'Therapist Post Page',
     },
   },
   {
     path: ':id',
     component: ViewCommunityPostComponent,
     data: {
-      title: 'Community Post Deatil Page',
+      title: 'Therapist Post Deatil Page',
     },
   },
 ];

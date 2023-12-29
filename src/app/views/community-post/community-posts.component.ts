@@ -75,7 +75,7 @@ export class CommunityPostComponent implements OnInit {
     const modalRef = this.modalService.open(DeleteDialogComponent, {
       centered: true,
     });
-    modalRef.componentInstance.title = 'Community Post';
+    modalRef.componentInstance.title = 'Therapist Post';
     modalRef.componentInstance.userId = Id;
     modalRef.componentInstance.message =
       'Are you sure want to delete this post?';
